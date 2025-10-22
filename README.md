@@ -142,7 +142,6 @@ nano /etc/systemd/system/gunicorn.service
 ```
 #### Add the following lines:
 ```
-<pre>
 [Unit]
 Description=gunicorn daemon for project_name
 After=network.target
@@ -162,7 +161,6 @@ RestartSec=3
 
 [Install]
 WantedBy=multi-user.target
-</pre>
 ```
 
 #### Install gunicorn
@@ -206,7 +204,7 @@ Sep 10 20:58:15 mail.example.com gunicorn[2377]: [2018-09-10 20:58:15 +0530] [23
 ```
 nano /etc/nginx/sites-available/gunicorn
 ```
-<pre>
+```
 # /etc/nginx/sites-available/enzora
 
 upstream gunicorn {
@@ -405,7 +403,7 @@ server {
     # Redirect to canonical non-www
     return 301 https://enzora.uz$request_uri;
 }
-</pre>
+```
 
 #### Save and close the file. Then, enable the Nginx virtual host by creating symlink:
 ```
