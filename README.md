@@ -141,6 +141,7 @@ py manage.py collectstatic
 nano /etc/systemd/system/gunicorn.service
 ```
 #### Add the following lines:
+```
 <pre>
 [Unit]
 Description=gunicorn daemon for project_name
@@ -162,6 +163,7 @@ RestartSec=3
 [Install]
 WantedBy=multi-user.target
 </pre>
+```
 
 #### Install gunicorn
 ```
