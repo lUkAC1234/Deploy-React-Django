@@ -82,7 +82,7 @@ cd project_name
 
 #### Install virtual environment to project
 ```
-pip install virtualenv
+apt install python3.12-venv
 ```
 
 #### Create virtual environment
